@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
+
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(0, 0, 0);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+html::-webkit-scrollbar{
+    width: 0.2rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.726);
+}
+
+section{
+    padding: 2rem;
+}
+
+.header div a{
+    margin: 1rem;
+    font-size: 1rem;
+    color:#fff;
+}
+
+.header div a:hover{
+    color: rgba(226, 196, 161, 0.9);
+    transition: .6s;
+}
+
+.div_menu{
+    position: relative;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+.efeito::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    bottom: -5px;
+    margin-left: 1.2vw;
+    background: rgba(255, 255, 255, 0.726);
+}
+
+.efeito::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    bottom: -5px;
+    margin-left: 1.2vw;
+    background: linear-gradient(rgba(97, 67, 33, 0.9), rgb(119, 85, 53));
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.div_menu a:hover ~ .efeito::after{
+    transform: scaleX(1);
+}
+
+.home{
+    background: url(./teste_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-bottom: 100px;
+    min-height: 450px;
+}
+
+.conteudo_home{
+    padding: 3vw;
+}
+
+.conteudo_home h3{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: rgb(138, 114, 94);
+    border-bottom: 1px solid rgb(138, 114, 94);
+    max-width: max-content;
+}
+
+
+.saude{
+    background: url(./teste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-bottom: 100px;
+}
+
+.conteudo_saude{
+    max-width: 40rem;
+    padding-left: 3vw;
+}
+
+.conteudo_saude h3{
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.conteudo_saude p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+.cafe{
+    margin-bottom: 100px;
+    border: 1px solid #fff;
+}
+
+.conteudo_cafe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.conteudo_cafe .tipo_cafe{
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    max-width: 300px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    border: 1px solid #fff;
+}
+
+
+.cafe h3{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.conteudo_cafe h4{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.tipo_cafe p{
+    color: #fff;
+    text-indent: 20px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+
+.historia{
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.historia h3{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+
+.conteudo_historia .sobre_historia{
+    border: 1px solid #fff;
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px 50px 0 50px;
+}
+
+.sobre_historia h4{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sobre_historia p{
+    color: #fff;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-indent: 30px;
+    padding: 10px;
+}
+
+
+.conteudo_historia {
+    margin: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
